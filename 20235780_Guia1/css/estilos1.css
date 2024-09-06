@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+}
+
+div{
+    font-size: 20px;
+}
+
+.main-tittle {
+    text-decoration: underline;
+    color: white;
+}
+
+.intro-text {
+    color: navy;
+    font-weight: bold;
+}
+
+.parrafo1 {
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.parrafo2 {
+    font-size: 12px;
+}

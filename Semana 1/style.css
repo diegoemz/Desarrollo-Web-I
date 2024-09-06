@@ -1,0 +1,42 @@
+*{
+   margin: 0;
+   padding: 0; /* RESET CSS*/
+}
+
+body{
+    background-color: rgb(244, 234, 234);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+h1, h2{
+    color: navy;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 3rem;
+}
+
+h2{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.pais{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#sv{
+    color: grey;
+}
+
+footer{
+    background-color: rgba(0, 0, 255, 0.5);
+    color: #FFFFFF;
+}
+
+html{
+    font-size: 24px;
+}

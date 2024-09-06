@@ -1,0 +1,92 @@
+body {
+    background-color: #000000; 
+    line-height: 1.5; 
+}
+
+.Main-tittle{
+    font-family: 'Permanent Marker';
+    color: #F58723; 
+    font-size: 60px; 
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.informacion-serie{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F1ECDF;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.titulo-1{
+    font-family:'New Amsterdam';
+    color: #C7BA99;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.nombres, .temas{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D4C9AD;
+    font-size: 24px;
+    margin-left: 80px;
+}
+
+.informacion-personajes, .informacion-estructura, .informacion-temas{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F1ECDF;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+}
+
+.imagen-personaje{
+    width: 80%; 
+    max-width: 200px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+
+.imagen-general{
+    width: 80%; 
+    max-width: 500px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+
+.info-adicional{
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.info-adicional th, .info-adicional td{
+    border: 3px solid #F1ECDF;
+    color: #F1ECDF;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info-adicional th{
+    color: #C7BA99;
+    font-weight: bold;
+}
+
+.texto-footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #C7BA99;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 60px;
+}
