@@ -1,0 +1,58 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    /*El primer valor es arriba-abajo, el segundo izquierda-derecha, luego si son 3 el primero superior, el segundo lados, el tercero inferior,
+    si son 4 el primero arriba, el segundo derecha, el tercero abajo y el cuarto izquierda*/ /*El margin es externo*/
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+li:nth-child(even) {
+    background-color: blueviolet;
+}
+
+li:nth-child(odd) {
+    background-color: crimson;
+}
+
+table {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid grey;
+}
+
+thead {
+    background-color: darkmagenta;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(2n+2) {
+    background-color: lightgrey;
+}
+
+tbody tr:hover {
+    background-color: darkmagenta;
+    color: white;
+}
