@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.envoltorio {
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*Menú header*/
+header .envoltorio {
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background-color: rgb(50, 58, 69);
+	border-bottom: rgb(17, 72, 139) 3px solid;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	line-height: 80px;
+}
+
+nav a {
+	color: #ddd;
+	display: block;
+	padding: 0 2rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background: rgb(17, 72, 139);
+}
+
+nav>ul {
+	background-color: rgb(50, 58, 69);
+	width: 100%;
+	overflow: hidden;
+}
+
+nav>ul>li {
+	float: left;
+}
+
+nav>ul>li>ul {
+	position: absolute;
+	display: none;
+}
+
+nav>ul>li:hover ul {
+	display: block;
+}
+
+nav>ul>li>ul>li {
+	background-color: rgb(50, 58, 69);
+}
+
+/*Imagen e Introducción*/
+.contenedor-slider {
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+
+.intro {
+	background-color: rgb(17, 72, 139);
+	line-height: 2;
+	color: white;
+	margin-left: 95px;
+	margin-right: 95px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.intro h1 a {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 42px;
+}
+
+.boton {
+	background-color: rgb(0, 48, 94);
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	margin-top: 30px;
+}
+
+.boton:hover {
+	background-color: rgb(15, 15, 60);
+}
+
+/*Cuadros con Información*/
+.servicios .envoltorio {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.envoltorio .grid {
+	width: 31.3%;
+	height: 400px;
+	border: 1px solid rgba(159, 162, 159, 0.689);
+	box-sizing: border-box;
+	margin-top: 40px;
+	margin: 40px 1% 40px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.envoltorio .grid:nth-child(2n+1) {
+	height: 385px;
+}
+
+.grid {
+	text-align: center;
+}
+
+.grid h3 {
+	color: rgb(56, 85, 114);
+	font-weight: lighter;
+	font-size: 26px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	padding-bottom: 10px;
+	margin: 0 20px 0;
+}
+
+.grid p {
+	text-align: justify;
+	padding: 20px;
+	color: rgb(169, 167, 167);
+	padding-top: 10px;
+}
+
+.grid a img {
+	width: 90%;
+	height: auto;
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.grid .botoncito {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(17, 72, 139);
+	padding: 10px 20px;
+}
+
+.botoncito:hover {
+	background-color: rgb(0, 48, 94);
+}
+
+/*Testimonio*/
+.testimonios {
+	height: 275px;
+	margin: 0 95px 0 95px;
+	background-color: rgb(237, 234, 229);
+	line-height: 2;
+	color: black;
+	align-content: center;
+}
+
+.testimonios h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: lighter;
+	padding: 10px;
+}
+
+.testimonios p {
+	color: rgb(147, 150, 150);
+}
+
+/*Footer*/
+footer {
+	width: 100%;
+	background-color: rgb(50, 58, 69);
+	color: white;
+	height: 50px;
+	align-content: center;
+	text-align: center;
+}
+
+/*Ofertas*/
+.ofertas h1 {
+	text-align: center;
+	padding: 40px 0 0 0;
+	color: rgb(17, 72, 139);
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*Tabla Ofertas*/
+.tabla {
+	width: 80%;
+	margin: 40px auto;
+	border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+.tabla th {
+	background-color: rgb(17, 72, 139);
+	color: white;
+	font-weight: bold;
+}
+
+.tabla tr:nth-child(2n+1) {
+	background-color: rgb(186, 196, 229);
+	font-weight: bold;
+}
+
+tbody tr td a {
+	background-color: rgb(71, 171, 88);
+	padding: 8px 15px;
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+tbody tr td a:hover {
+	background-color: rgb(17, 139, 37);
+}
+
+/*Ofertas footer*/
+.footers {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+/*Consejos*/
+.consejos h1 {
+	text-align: center;
+	padding: 40px 0 0 0;
+	color: rgb(17, 72, 139);
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.consejos video {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
