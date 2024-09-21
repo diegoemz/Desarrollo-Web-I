@@ -35,7 +35,7 @@ h1{
 
 #descripcion{
     width: 37.5%;
-    height: 400px;
+    height: auto;
     background-color: #888;
     float: left;
 }
