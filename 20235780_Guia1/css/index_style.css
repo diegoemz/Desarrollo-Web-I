@@ -26,10 +26,11 @@ body{
 
 .caja{
     width: 32.3%;
-    height: 400px;
+    height: 600px;
     border: 2px rgb(0, 0, 0) solid;
     margin: 0px 0.5%;
     background: rgb(245, 234, 234);
+    margin-bottom: 15px;
 }
 
 h1{
