@@ -264,10 +264,77 @@ tbody tr td a:hover {
 	color: rgb(17, 72, 139);
 	font-size: 40px;
 	margin-bottom: 50px;
+	font-weight: bold;
 }
 
 .consejos video {
 	display: block;
 	margin: 0 auto;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/*Aplicar*/
+.title {
+	text-align: center;
+	padding: 40px 0 0 0;
+	color: rgb(17, 72, 139);
+	font-size: 40px;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+.forms {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0eeee;
+	height: 800px;
+	margin-bottom: 80px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#envioforms form {
+	width: 400px;
+	text-align: center;
+}
+
+#envioforms {
+	border: none;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+#envioforms input {
+	width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #b2b0b0; 
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+	padding-left: 30px;
+}
+
+#envioforms label {
+	display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #525252;
+	font-size: 12px;
+}
+
+#boton {
+	background-color: rgb(105, 144, 195);
+	border-radius: 15px;
+	width: 150px;
+	height: 50px;
+	color: #fff;
+	margin-top: 3px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+#boton:hover {
+	background-color: rgb(136, 136, 136);
 }

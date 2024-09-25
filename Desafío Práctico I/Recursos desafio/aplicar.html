@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Bolsa de trabajo ESEN</title>
-	<link href="css/estilo.css" rel="stylesheet"/>
+	<link href="css/estilo.css" rel="stylesheet" />
 </head>
+
 <body>
 	<header>
 		<div class="envoltorio">
@@ -25,15 +27,84 @@
 	<section>
 		<article class="ofertas">
 			<div class="envoltorio">
-				<p>COLOCAR AQUI EL FORMULARIO DE APLICACION</p>
+				<p class="title">FORMULARIO DE APLICACION</p>
+				<div class="forms">
+					<fieldset id="envioforms">
+						<form action="aplicar.php" method="post">
+							<input type="text" id="nombre" name="nombre" value="" pattern="^[a-zA-Z\s]+$"
+								title="Solo acepta letras" class="control" placeholder="Nombre" required /><br>
+
+							<input type="text" id="apellido" name="apellido" value="" pattern="^[a-zA-Z\s]+$"
+								title="Solo acepta letras" class="control" placeholder="Apellido" required /><br>
+
+							<input type="number" id="carnet" name="carnet" value="" title="Solo acepta números"
+								class="control" placeholder="Carnet" required /><br>
+
+							<input type="text" list="departamento" name="departamento"
+								placeholder="Departamento de residencia" required /><br>
+							<datalist id="departamento">
+								<option value="Ahuachapán">Ahuachapán</option>
+								<option value="Santa Ana">Santa Ana</option>
+								<option value="Sonsonate">Sonsonate</option>
+								<option value="Chalatenango">Chalatenango</option>
+								<option value="La Libertad">La Libertad</option>
+								<option value="San Salvador">San Salvador</option>
+								<option value="Cuscatlán">Cuscatlán</option>
+								<option value="La Paz">La Paz</option>
+								<option value="Cabañas">Cabañas</option>
+								<option value="San Vicente">San Vicente</option>
+								<option value="Usulután">Usulután</option>
+								<option value="San Miguel">San Miguel</option>
+								<option value="Morazán">Morazán</option>
+								<option value="La Unión">La Unión</option>
+							</datalist>
+
+							<input type="number" id="edad" name="edad" value="" min="15" max="100"
+								title="Solo acepta números del 15 al 100" class="control" placeholder="Edad"
+								required /><br>
+
+							<input type="text" list="genero" name="genero" placeholder="Género" required><br>
+							<datalist id="genero">
+								<option value="Masculino">Masculino</option>
+								<option value="Femenino">Femenino</option>
+							</datalist>
+
+							<label>Fecha de nacimiento</label>
+							<input type="date" id="fecha-nac" name="fecha-nac" class="control" required /><br>
+
+							<input type="text" id="telefono" name="telefono" value="" pattern="^[0-9]{4}-?[0-9]{4}$"
+								title="Solo acepta números en el siguiente formato: 2222-2222" class="control"
+								placeholder="Teléfono" required /><br>
+
+							<input type="text" list="carrera" name="carrera" placeholder="Carrera" required /><br>
+							<datalist id="carrera">
+								<option value="Ingeniería de Software y Negocios Digitales">Ingeniería de Software y
+									Negocios
+									Digitales</option>
+								<option value="Ingeniería de Negocios">Ingeniería de Negocios</option>
+								<option value="Licenciatura en Economía y Negocios">Licenciatura en Economía y Negocios
+								</option>
+								<option value="Licenciatura en Ciencias Jurídicas">Licenciatura en Ciencias Jurídicas
+								</option>
+							</datalist>
+
+							<input type="text" id="salario" name="salario" class="control" value=""
+								pattern="^\d{1,3}(,\d{3})*(\.\d{2})?$"
+								title="Solo acepta números en el siguiente formato: 100,000.00"
+								placeholder="Pretensión salarial" required /><br>
+
+							<button id="boton" type="submit">Aplicar</button>
+						</form>
+					</fieldset>
+				</div>
+
 			</div>
 		</article>
-		
+
 	</section>
 	<footer>
-		<p>Creado por: Colocar su nombre y numero de carnet</p>
+		<p>Creado por: Diego Enrique Morales Zepeda 20235780</p>
 	</footer>
 </body>
+
 </html>
-
-
