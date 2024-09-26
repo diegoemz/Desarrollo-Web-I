@@ -1,0 +1,29 @@
+:root{
+    --fondo: gainsboro;
+    --fondo-items: blue;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex-direction: column-reverse;
+}
+
+.item{
+    background-color: var(--fondo-items);
+    width: 25%;
+    font-size: 1.5rem;
+    border: thin solid white;
+}
