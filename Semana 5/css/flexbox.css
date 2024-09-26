@@ -1,6 +1,7 @@
 :root{
     --fondo: gainsboro;
     --fondo-items: blue;
+    --fondo-container: white;
 }
 
 *{
@@ -18,12 +19,26 @@ body{
     display: flex;
     width: 80%;
     margin: 10px auto;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--fondo-container);
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: flex-start;
+    align-content: space-around;
 }
 
 .item{
+    flex-grow: 1;
+    flex-shrink: 0;
     background-color: var(--fondo-items);
-    width: 25%;
+    width: 300px;
     font-size: 1.5rem;
     border: thin solid white;
+}
+
+.item:nth-child(2n){
+    flex-grow: 2;
+    flex-shrink: 3;
+    background-color: bisque;
 }
