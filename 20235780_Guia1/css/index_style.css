@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-	background: #3a5a40;
+	background: #486e4f;
 }
 
 nav>ul {
@@ -80,7 +80,7 @@ body{
     color: #dad7cd;
 }
 
-.intro {
+.intro, .curso, .foda, .retroalimentacion {
 	line-height: 2;
 	margin-left: 95px;
 	margin-right: 95px;
@@ -88,15 +88,36 @@ body{
 	padding-bottom: 40px;
 }
 
-.intro h1{
+.intro h1, .curso h1, .foda h1, .retroalimentacion h1{
 	text-align: center;
 	text-decoration: none;
 	font-size: 42px;
 }
 
-.intro p{
+.intro p, .curso p, .foda p, .retroalimentacion p{
     text-align: center;
     font-size: 18px;
+    border-bottom: 1px solid #dad7cd;
+    padding-bottom: 30px;
+}
+
+.foda h1{
+    font-weight: bold;
+}
+
+.foda p, .retroalimentacion p{
+    border-bottom: none;
+    text-align: justify;
+    color: #d4d9c0;
+}
+
+.curso p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.retroalimentacion h3, .retroalimentacion p{
+    text-align: right;
 }
 
 .guias .envoltorio{
@@ -120,6 +141,7 @@ body{
     color: #dad7cd;
     box-shadow: 5px 5px 10px #dad7cd;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .item h3{
@@ -141,6 +163,7 @@ body{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .tit{
@@ -148,16 +171,26 @@ body{
     font-size: 30px;
 }
 
-.descripcion{
+.cuadro{
     width: 100%;
-    height: 200px;
+    max-height: 350px;
+    overflow-y: auto;
+    background-color: #ccd5ae;
+    padding-left: 40px;
+    border-radius: 10px;
+}
+
+.descripcion{
+    width: 90%;
+    height: 225px;
     background-color: #708d81;
     margin: 20px 0px;
     text-align: justify;
     padding: 40px;
     line-height: 1.5;
-    box-shadow: 5px 5px 10px #b3b1a9;
+    box-shadow: 5px 5px 10px #6e6c68;
     font-size: 18px;
+    border-radius: 10px;
 }
 
 .descripcion h2{
@@ -165,6 +198,51 @@ body{
     padding-bottom: 20px;
     font-weight: bold;
     color: #375345;
+}
+
+.unidades {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla thead {
+    background-color: #344e41;
+    color: #dad7cd;
+}
+
+.tabla th {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 2px solid #6b9080;
+}
+
+.tabla td {
+    padding: 15px;
+    border-bottom: 1px solid #d1d1d1;
+    vertical-align: top;
+    color: #2c4237;
+}
+
+.tabla ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.tabla ul li {
+    line-height: 1.5;
 }
 
 footer{
@@ -177,4 +255,6 @@ footer{
     padding-top: 30px;
     font-size: 22px;
     font-weight: bold;
+    left: 0;
+    bottom: 0;
 }
