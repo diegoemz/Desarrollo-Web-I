@@ -142,10 +142,14 @@ body {
 .imagen {
     width: auto;
     max-height: 250px;
-    margin: 5px 20px;
+    margin: 5px 10px;
     align-items: center;
     justify-items: center;
     border-radius: 10px;
+}
+
+#fin{
+    text-align: center;
 }
 
 .guias .envoltorio {
