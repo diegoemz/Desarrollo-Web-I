@@ -408,7 +408,7 @@ footer {
     header .envoltorio {
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -443,7 +443,7 @@ footer {
     }
 
     .cuadro .descripcion{
-        width: 70%;
+        width: 60%;
         height: fit-content;
     }
 
@@ -459,6 +459,10 @@ footer {
         width: auto;
         max-width: 300px;
         margin: 10px 0;
+    }
+
+    #bio{
+        font-size: var(--subtitulo-2);
     }
 
     footer {
