@@ -149,7 +149,7 @@ body {
 
 /*Descripción de Guías*/
 #descripcion-guias .envoltorio {
-    width: 80%;
+    width: 1200px;
     margin: 0 auto 60px;
     display: flex;
     flex-wrap: wrap;
@@ -171,7 +171,7 @@ body {
 }
 
 .descripcion {
-    width: 90%;
+    width: 1040px;
     height: 225px;
     background-color: var(--cafe-oscuro2);
     margin: 20px 0px;
@@ -323,53 +323,6 @@ footer {
     display: none;
 }
 
-#descripcion-guias .envoltorio {
-    width: 100%;
-}
-
-.cuadro {
-    width: 100%;
-    max-height: 400px;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: var(--cafe-medio1);
-    border-radius: 10px;
-}
-
-.descripcion {
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-    padding: 20px;
-    line-height: 1.5;
-    font-size: var(--texto-1);
-    box-shadow: 3px 3px 8px var(--cafe-oscuro1);
-}
-
-.descripcion p {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-}
-
-#imagenes {
-    flex-direction: column;
-    align-items: center;
-}
-
-.imagen {
-    width: 100%;
-    max-height: 180px;
-    margin: 10px 0;
-}
-
-footer {
-    height: auto;
-    font-size: var(--texto-3);
-    padding: 10px;
-}
-
 @media (max-width: 480px) {
     :root {
         --titulo-1: 28px;
@@ -426,15 +379,13 @@ footer {
         font-size: var(--texto-2);
     }
 
-    #imagenes {
+    #descripcion-guias .envoltorio{
+        width: 400px;
         flex-direction: column;
-        align-items: center;
     }
 
-    .imagen {
-        width: 100%;
-        max-height: 180px;
-        margin: 10px 0;
+    .descripcion{
+        height: auto;
     }
 
     footer {
