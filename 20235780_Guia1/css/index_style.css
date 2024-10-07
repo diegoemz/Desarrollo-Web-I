@@ -374,18 +374,31 @@ footer {
         color: var(--cafe-oscuro1);
     }
 
-    .descripcion {
-        padding: 15px;
-        font-size: var(--texto-2);
-    }
-
-    #descripcion-guias .envoltorio{
-        width: 400px;
+    #guias .envoltorio{
+        display: flex;
         flex-direction: column;
     }
 
-    .descripcion{
+    .cuadro{
+        width: 300px;
+    }
+
+    .cuadro .descripcion{
+        width: 90%;
+        padding: 15px;
+        font-size: var(--texto-2);
         height: auto;
+    }
+
+    #imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 100%;
+        max-height: 180px;
+        margin: 10px 0;
     }
 
     footer {
