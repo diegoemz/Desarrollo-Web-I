@@ -309,106 +309,6 @@ footer {
     bottom: 0;
 }
 
-/*Extra*/
-.hamburguesa {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: var(--cafe-claro1);
-    z-index: 1001;
-    padding: 10px;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-@media (max-width: 480px) {
-    :root {
-        --titulo-1: 28px;
-        --titulo-2: 24px;
-        --subtitulo-1: 20px;
-        --subtitulo-2: 18px;
-        --texto-1: 14px;
-        --texto-2: 12px;
-        --texto-3: 10px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background-color: var(--cafe-medio1);
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        padding: 20px 0;
-    }
-
-    .hamburguesa {
-        display: block;
-    }
-
-    #menu-toggle:checked + .hamburguesa + nav ul {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    nav li {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    nav a {
-        padding: 15px;
-        font-size: var(--texto-1);
-        background-color: var(--cafe-oscuro2);
-        border-radius: 5px;
-        margin: 5px 0;
-    }
-
-    nav a:hover {
-        background-color: var(--cafe-claro1);
-        color: var(--cafe-oscuro1);
-    }
-
-    #guias .envoltorio{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cuadro{
-        width: 300px;
-    }
-
-    .cuadro .descripcion{
-        width: 90%;
-        padding: 15px;
-        font-size: var(--texto-2);
-        height: auto;
-    }
-
-    #imagenes {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagen {
-        width: 100%;
-        max-height: 180px;
-        margin: 10px 0;
-    }
-
-    footer {
-        height: auto;
-        font-size: var(--texto-3);
-        padding: 10px;
-    }
-}
-
-
 @media (min-width: 481px) and (max-width: 768px) {
     :root {
         --titulo-1: 32px;
@@ -421,7 +321,7 @@ footer {
     }
 
     header {
-        height: auto;
+        height: 70px;
         padding: 30px;
     }
 
@@ -441,26 +341,130 @@ footer {
         padding: 10px;
     }
 
-    #guias .item {
-        width: 45%;
-        margin: 20px;
+    #guias{
+        display: flex;
+        flex-direction: column;
     }
 
-    #imagenes {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    #guias .item{
+        width: 75%;
     }
 
-    .imagen {
-        width: 45%;
-        max-height: 200px;
-        margin: 10px 0;
+    #descripcion-guias .envoltorio{
+        width: 80%;
+    }
+
+    .tit{
+        font-size: var(--subtitulo-1);
+    }
+
+    .cuadro{
+        width: 100%;
+    }
+
+    .cuadro .descripcion{
+        width: 70%;
+        height: fit-content;
+    }
+
+    #imagenes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagenes .imagen{
+        height: auto;
+        max-height: 250px;
+        width: auto;
+        max-width: 400px;
+        margin: 20px 0;
     }
 
     footer {
         height: auto;
         padding: 15px;
         text-align: center;
+        font-size: var(--texto-3);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --titulo-1: 30px;
+        --titulo-2: 26px;
+        --subtitulo-1: 20px;
+        --subtitulo-2: 18px;
+        --texto-1: 14px;
+        --texto-2: 12px;
+        --texto-3: 10px;
+    }
+
+    header {
+        height: 60px;
+        padding: 20px;
+    }
+
+    header .envoltorio {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    #guias{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #guias .item{
+        width: 75%;
+    }
+
+    #descripcion-guias .envoltorio{
+        width: 80%;
+    }
+
+    .tit{
+        font-size: var(--subtitulo-1);
+    }
+
+    .cuadro{
+        width: 100%;
+    }
+
+    .cuadro .descripcion{
+        width: 70%;
+        height: fit-content;
+    }
+
+    #imagenes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagenes .imagen{
+        height: auto;
+        max-height: 150px;
+        width: auto;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        font-size: var(--texto-3);
     }
 }
