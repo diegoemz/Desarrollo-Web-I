@@ -336,6 +336,11 @@ footer {
         margin: 20px 0;
     }
 
+    .cuadro{
+        width: auto;
+        height: auto;
+    }
+
     #imagenes {
         flex-direction: column;
         align-items: center;
