@@ -401,12 +401,12 @@ footer {
     }
 
     header {
-        height: 60px;
+        height: auto;
         padding: 20px;
     }
 
     header .envoltorio {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
@@ -447,7 +447,7 @@ footer {
     }
 
     .cuadro .descripcion{
-        width: 60%;
+        width: 50%;
         height: fit-content;
     }
 
