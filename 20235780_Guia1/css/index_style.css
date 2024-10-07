@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 /*Variables*/
-:root{
+:root {
     /*Colores*/
     --cafe-claro1: #ede0d4;
     --cafe-claro2: #e6ccb2;
@@ -16,7 +16,7 @@
     --subtitulo-2: 22px;
     --texto-1: 18px;
     --texto-2: 16px;
-    --texto-3: 14px; 
+    --texto-3: 14px;
 }
 
 /*Reset HTML*/
@@ -49,7 +49,7 @@ header .envoltorio {
     align-items: center;
 }
 
-header .titulo{
+header .titulo {
     color: var(--cafe-claro1);
     font-weight: bold;
     font-size: var(--texto-1);
@@ -88,27 +88,27 @@ body {
 
 /*Index*/
 /*Párrafo Introducción*/
-#intro .envoltorio{
+#intro .envoltorio {
     margin: 50px auto;
 }
 
-#intro{
+#intro {
     text-align: center;
     font-size: var(--texto-1);
     line-height: 2;
 }
 
-#intro h1{
+#intro h1 {
     font-size: var(--titulo-1);
 }
 
-#intro p{
+#intro p {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--cafe-medio2);
 }
 
 /*Guías*/
-#guias .envoltorio{
+#guias .envoltorio {
     margin: 70px auto 20px;
     display: flex;
     flex-direction: row;
@@ -119,7 +119,7 @@ body {
     border-bottom: 1px solid var(--cafe-medio2);
 }
 
-#guias .item{
+#guias .item {
     width: 30%;
     height: 375px;
     background-color: var(--cafe-oscuro1);
@@ -131,19 +131,19 @@ body {
     line-height: 2.3;
 }
 
-.item a{
+.item a {
     text-decoration: none;
     color: var(--cafe-claro2);
     font-size: var(--texto-1);
 }
 
-.item a:hover{
+.item a:hover {
     color: var(--cafe-claro1);
     transform: scale(1.5);
     text-decoration: underline;
 }
 
-.item h3{
+.item h3 {
     font-size: var(--subtitulo-1);
 }
 
@@ -183,7 +183,7 @@ body {
     border-radius: 10px;
 }
 
-.descripcion p{
+.descripcion p {
     color: var(--cafe-claro1);
 }
 
@@ -195,21 +195,29 @@ body {
 }
 
 /*Curso*/
-#curso, #foda, #retroalimentacion{
+#curso,
+#foda,
+#retroalimentacion {
     margin: 50px auto;
 }
 
-#curso, #foda, #retroalimentacion{
+#curso,
+#foda,
+#retroalimentacion {
     text-align: center;
     font-size: var(--texto-1);
     line-height: 2;
 }
 
-#curso h1, #foda h1, #retroalimentacion h1{
+#curso h1,
+#foda h1,
+#retroalimentacion h1 {
     font-size: var(--titulo-1);
 }
 
-#curso p, #foda h1, #retroalimentacion h1{
+#curso p,
+#foda h1,
+#retroalimentacion h1 {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--cafe-medio2);
 }
@@ -255,27 +263,27 @@ body {
 }
 
 /*Datos Personales*/
-#bio{
+#bio {
     margin: 50px auto;
     margin-bottom: 20px;
 }
 
-#bio{
+#bio {
     text-align: center;
     font-size: var(--texto-1);
     line-height: 2;
 }
 
-#bio h1{
+#bio h1 {
     font-size: var(--titulo-1);
 }
 
-#bio p{ 
+#bio p {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--cafe-medio2);
 }
 
-#imagenes{
+#imagenes {
     display: flex;
     flex: row;
     justify-content: space-evenly;
@@ -301,10 +309,65 @@ footer {
     bottom: 0;
 }
 
+/*Extra*/
 .hamburguesa {
     display: none;
     font-size: 30px;
     cursor: pointer;
+    color: var(--cafe-claro1);
+    z-index: 1001;
+    padding: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#descripcion-guias .envoltorio {
+    width: 100%;
+}
+
+.cuadro {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--cafe-medio1);
+    border-radius: 10px;
+}
+
+.descripcion {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: var(--texto-1);
+    box-shadow: 3px 3px 8px var(--cafe-oscuro1);
+}
+
+.descripcion p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#imagenes {
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen {
+    width: 100%;
+    max-height: 180px;
+    margin: 10px 0;
+}
+
+footer {
+    height: auto;
+    font-size: var(--texto-3);
+    padding: 10px;
 }
 
 @media (max-width: 480px) {
@@ -322,11 +385,13 @@ footer {
         display: none;
         flex-direction: column;
         text-align: center;
-        background-color: #f0f0f0;
+        background-color: var(--cafe-medio1);
         position: absolute;
-        top: 100%;
+        top: 80px;
         left: 0;
         right: 0;
+        z-index: 1000;
+        padding: 20px 0;
     }
 
     .hamburguesa {
@@ -335,17 +400,30 @@ footer {
 
     #menu-toggle:checked + .hamburguesa + nav ul {
         display: flex;
+        justify-content: flex-start;
     }
 
-    #guias .item {
+    nav li {
         width: 100%;
         margin: 10px 0;
     }
 
-    .descripcion .cuadro {
-        width: 90%;
-        max-height: 400px;
-        overflow-y: auto;
+    nav a {
+        padding: 15px;
+        font-size: var(--texto-1);
+        background-color: var(--cafe-oscuro2);
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    nav a:hover {
+        background-color: var(--cafe-claro1);
+        color: var(--cafe-oscuro1);
+    }
+
+    .descripcion {
+        padding: 15px;
+        font-size: var(--texto-2);
     }
 
     #imagenes {
@@ -365,6 +443,7 @@ footer {
         padding: 10px;
     }
 }
+
 
 @media (min-width: 481px) and (max-width: 768px) {
     :root {
