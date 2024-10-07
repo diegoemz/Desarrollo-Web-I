@@ -401,15 +401,19 @@ footer {
     }
 
     header {
-        height: auto;
+        height: 60px;
         padding: 20px;
     }
 
     header .envoltorio {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
+    }
+
+    header .titulo{
+        visibility: hidden;
     }
 
     nav ul {
