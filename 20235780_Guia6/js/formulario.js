@@ -86,14 +86,40 @@ const addPaciente = function () {
     }
 };
 
-//Funcion que imprime la ficha de los pacientes registrados
+// Función para editar un paciente
+function editarPaciente(index) {
+    const paciente = arrayPaciente[index];
+    
+    // Rellenar los campos del formulario con la información del paciente a editar
+    inputNombre.value = paciente[0];
+    inputApellido.value = paciente[1];
+    inputFechaNacimiento.value = paciente[2];
+    inputRdMasculino.checked = paciente[3] === "Hombre";
+    inputRdFemenino.checked = paciente[3] === "Mujer";
+    cmbPais.value = [...cmbPais.options].find(option => option.text === paciente[4]).value;
+    inputDireccion.value = paciente[5];
+
+    // Remover el paciente del array para que se actualice al guardar cambios
+    arrayPaciente.splice(index, 1);
+    imprimirPacientes();
+}
+
+// Función para eliminar un paciente
+function eliminarPaciente(index) {
+    arrayPaciente.splice(index, 1);
+    mensaje.innerHTML = "Paciente eliminado correctamente";
+    toast.show();
+    imprimirPacientes();
+}
+
+// Función imprimirFilas 
 function imprimirFilas() {
     let $fila = "";
-    let contador = 1;
+    let contador = 0;
 
     arrayPaciente.forEach((element) => {
         $fila += `<tr>
-                    <td scope="row" class="text-center fw-bold">${contador}</td>
+                    <td scope="row" class="text-center fw-bold">${contador + 1}</td>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td>
                     <td>${element[2]}</td>
@@ -101,10 +127,10 @@ function imprimirFilas() {
                     <td>${element[4]}</td>
                     <td>${element[5]}</td>
                     <td>
-                        <button id="idBtnEditar${contador}" type="button" class="btn btn-primary" alt="Eliminar">
+                        <button type="button" class="btn btn-primary" onclick="editarPaciente(${contador})">
                             <i class="bi bi-pencil-square"></i>
                         </button>
-                        <button id="idBtnEliminar${contador}" type="button" class="btn btn-danger" alt="Editar">
+                        <button type="button" class="btn btn-danger" onclick="eliminarPaciente(${contador})">
                             <i class="bi bi-trash3-fill"></i>
                         </button>
                     </td>
@@ -114,6 +140,7 @@ function imprimirFilas() {
     return $fila;
 }
 
+// Función imprimirPacientes
 const imprimirPacientes = () => {
     let $table = `<div class="table-responsive">
                     <table class="table table-striped table-hover table-bordered">
@@ -123,16 +150,16 @@ const imprimirPacientes = () => {
                             <th scope="col" class="text-center" style="width:15%">Apellido</th>
                             <th scope="col" class="text-center" style="width:10%">Fecha nacimiento</th>
                             <th scope="col" class="text-center" style="width: 10%">Sexo</th> 
-                            <th scope="co1" class="text-center" style="width: 10%">Pais</th> 
+                            <th scope="col" class="text-center" style="width: 10%">Pais</th> 
                             <th scope="col" class="text-center" style="width: 25%">Dirección</th> 
                             <th scope="col" class="text-center" style="width:10%">Opciones</th>
                         </tr>
                         ${imprimirFilas()}
                     </table>
-                </div>
-                `;
+                </div>`;
     document.getElementById("idTablaPacientes").innerHTML = $table;
 };
+
 
 // Contador global de los option correspondiente
 // al select (cmb) pais
